@@ -1,0 +1,15 @@
+[config]
+input_folder_path    = ./bigdata1/zt53/data/face/
+annotations_path     = ./Bounding Boxes/
+num_keypoints        = 68
+
+train_datasets_names = lfpw, lfpw, helen, helen, afw, ibug
+train_folders        = lfpw/trainset, lfpw/testset, helen/trainset, helen/testset, afw, ibug
+train_annotations    = bounding_boxes_lfpw_trainset.mat, bounding_boxes_lfpw_testset.mat, bounding_boxes_helen_trainset.mat, bounding_boxes_helen_testset.mat, bounding_boxes_afw.mat, bounding_boxes_ibug.mat
+
+val_datasets_names   = 300W_indoor, 300W_outdoor
+val_folders          = 300W/01_Indoor, 300W/02_Outdoor
+val_annotations      = 
+
+output_folder        = ./dataset
+output_prefix        = all_300Wtest_

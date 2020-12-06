@@ -1,0 +1,15 @@
+[config]
+input_folder_path    = ./bigdata1/zt53/data/face/
+annotations_path     = ./Bounding Boxes/
+num_keypoints        = 68
+
+train_datasets_names = 
+train_folders        = 
+train_annotations    = 
+
+val_datasets_names   = ibug
+val_folders          = ibug_outliers
+val_annotations      = bounding_boxes_ibug.mat
+
+output_folder        = ./dataset
+output_prefix        = ibug_selected_

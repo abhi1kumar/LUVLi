@@ -1,0 +1,15 @@
+[config]
+input_folder_path    = ./bigdata1/zt53/data/face/
+annotations_path     = ./Bounding Boxes/
+num_keypoints        = 68
+
+train_datasets_names =
+train_folders        =
+train_annotations    =
+
+val_datasets_names   = menpo
+val_folders          = menpo_organized/trainset
+val_annotations      = 
+
+output_folder        = ./dataset
+output_prefix        = menpo_

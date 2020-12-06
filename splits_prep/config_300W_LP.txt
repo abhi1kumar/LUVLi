@@ -1,0 +1,15 @@
+[config]
+input_folder_path    = ./bigdata1/zt53/data/face/
+annotations_path     = ./Bounding Boxes/
+num_keypoints        = 68
+
+train_datasets_names = lfpw, helen, afw, ibug
+train_folders        = 300W_LP_organized/LFPW, 300W_LP_organized/HELEN, 300W_LP_organized/AFW, 300W_LP_organized/IBUG
+train_annotations    = 
+
+val_datasets_names   = 
+val_folders          = 
+val_annotations      = 
+
+output_folder        = ./dataset
+output_prefix        = 300W_LP_

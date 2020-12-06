@@ -1,0 +1,15 @@
+[config]
+input_folder_path    = ./bigdata1/zt53/data/face/
+annotations_path     = ./Bounding Boxes/
+num_keypoints        = 68
+
+train_datasets_names = lfpw, helen, afw
+train_folders        = lfpw/trainset, helen/trainset, afw
+train_annotations    = bounding_boxes_lfpw_trainset.mat, bounding_boxes_helen_trainset.mat, bounding_boxes_afw.mat
+
+val_datasets_names   = lfpw, helen, ibug
+val_folders          = lfpw/testset, helen/testset, ibug
+val_annotations      = bounding_boxes_lfpw_testset.mat, bounding_boxes_helen_testset.mat, bounding_boxes_ibug.mat
+
+output_folder        = ./dataset
+output_prefix        = normal_

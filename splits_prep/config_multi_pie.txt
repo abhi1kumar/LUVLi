@@ -1,0 +1,15 @@
+[config]
+input_folder_path    = ./bigdata1/zt53/data/face/
+annotations_path     = ./Bounding Boxes/
+num_keypoints        = 68
+
+train_datasets_names = 
+train_folders        = 
+train_annotations    = 
+
+val_datasets_names   = multi_pie
+val_folders          = multi_pie_organized
+val_annotations      = 
+
+output_folder        = ./dataset
+output_prefix        = multi_pie_

@@ -1,0 +1,41 @@
+# Donot track any of these
+# Abhinav Kumar 2019/05/20
+# Reference https://gist.github.com/octocat/9257657
+
+# Folders
+abhinav_model_dir/
+bigdata1/
+Bounding\ Boxes/
+dataset/
+dataset_csv
+exp_dir/
+from_wenxuan/
+videos/
+test-8-new-loss-soft-fc-finetune/
+test-8-new-loss-soft-fc/
+test-8-new-loss-soft/
+images/300W_test_only_groundtruth/
+images/300W_test_only_means/
+
+# Compiled source
+*.pyc
+*.py0
+
+# OS Generated Files
+# Donot ignore __init__.py as that helps in linking
+dummy.json
+models/cu_net_prev_version_finetune_fc_finetune_abhinav.py
+train_softmax.log
+splits_prep/config_dummy.txt
+splits_prep/config_dummy_2.txt
+splits_prep/config_leave_one.txt
+scripts_main*
+
+# Model files
+face-layer-num-8-order-1-model-best.pth.tar
+pose-lr-0.00025-100-lr-0.00005-116-model-best.pth.tar
+
+# Other files
+misc/.~lock.model_logs.ods#
+images/3d*
+images/scatter*

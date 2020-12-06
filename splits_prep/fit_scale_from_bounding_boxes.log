@@ -1,0 +1,66 @@
+Adding input folder path to the train and val relative dataset paths...
+Adding annotations path to the train and val relative annotations paths...
+
+Training data preparation started...
+Dataset= lfpw      	Path= ./bigdata1/zt53/data/face/lfpw/trainset            Annotations= ../Bounding Boxes/bounding_boxes_lfpw_trainset.mat           #Images= 811
+Dataset= helen     	Path= ./bigdata1/zt53/data/face/helen/trainset           Annotations= ../Bounding Boxes/bounding_boxes_helen_trainset.mat          #Images= 2000
+Dataset= afw       	Path= ./bigdata1/zt53/data/face/afw                      Annotations= ../Bounding Boxes/bounding_boxes_afw.mat                     #Images= 337
+
+Fitting preparation started...
+Using all features
+Fitting started...
+Least Square
+[ 0.00000000e+00  2.06067248e-18 -1.70797770e-18  4.31989714e-19
+ -3.77560852e-19  5.86248322e-19  5.00000000e-03]
+Ridge
+[-6.75559028e-08 -5.87462256e-08  6.66894673e-08  5.96787235e-08
+  1.34250073e-07  1.18428674e-07  4.99963826e-03]
+-6.839428485783117e-07
+LASSO
+[0.00000000e+00 0.00000000e+00 0.00000000e+00 8.81404136e-06
+ 0.00000000e+00 0.00000000e+00 4.98036791e-03]
+0.0018934985405478777
+
+Using diff features
+Fitting started...
+Least Square
+[0.00277961 0.00244705]
+Ridge
+[0.00278553 0.00245544]
+-0.010351445548452798
+LASSO
+[0.00279108 0.00244472]
+-0.00805332392662983
+
+Using diff features and max
+Fitting started...
+Least Square
+[0.00000000e+00 1.57031025e-18 5.00000000e-03]
+Ridge
+[2.01296471e-07 1.77442681e-07 4.99963867e-03]
+-7.480483357191758e-07
+LASSO
+[1.03426279e-05 2.17038839e-05 4.96456646e-03]
+0.0022064831890924452
+
+Using only max
+Fitting started...
+Least Square
+[0.005]
+Ridge
+[0.005]
+5.412724957132298e-07
+LASSO
+[0.004995]
+0.0023280564956329464
+
+name1= ./bigdata1/zt53/data/face/lfpw/testset/image_0068.png        name2= lfpw/testset/image_0068.png                                  Ground_truth= 1.082663 Computed= 1.082663	Diff= 0.000000
+name1= ./bigdata1/zt53/data/face/lfpw/testset/image_0104.png        name2= lfpw/testset/image_0104.png                                  Ground_truth= 0.609617 Computed= 0.609617	Diff= 0.000000
+name1= ./bigdata1/zt53/data/face/lfpw/testset/image_0084.png        name2= lfpw/testset/image_0084.png                                  Ground_truth= 0.720884 Computed= 0.720884	Diff= 0.000000
+name1= ./bigdata1/zt53/data/face/lfpw/testset/image_0102.png        name2= lfpw/testset/image_0102.png                                  Ground_truth= 0.918770 Computed= 0.918770	Diff= 0.000000
+name1= ./bigdata1/zt53/data/face/lfpw/testset/image_0137.png        name2= lfpw/testset/image_0137.png                                  Ground_truth= 0.620585 Computed= 0.620585	Diff= 0.000000
+name1= ./bigdata1/zt53/data/face/lfpw/testset/image_0205.png        name2= lfpw/testset/image_0205.png                                  Ground_truth= 0.660804 Computed= 0.660804	Diff= 0.000000
+name1= ./bigdata1/zt53/data/face/lfpw/testset/image_0108.png        name2= lfpw/testset/image_0108.png                                  Ground_truth= 0.581386 Computed= 0.581386	Diff= 0.000000
+name1= ./bigdata1/zt53/data/face/lfpw/testset/image_0002.png        name2= lfpw/testset/image_0002.png                                  Ground_truth= 0.931304 Computed= 0.931304	Diff= 0.000000
+name1= ./bigdata1/zt53/data/face/lfpw/testset/image_0071.png        name2= lfpw/testset/image_0071.png                                  Ground_truth= 1.398989 Computed= 1.398989	Diff= 0.000000
+name1= ./bigdata1/zt53/data/face/lfpw/testset/image_0049.png        name2= lfpw/testset/image_0049.png                                  Ground_truth= 0.488438 Computed= 0.488438	Diff= 0.000000

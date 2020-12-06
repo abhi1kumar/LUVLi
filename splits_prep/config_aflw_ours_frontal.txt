@@ -1,0 +1,15 @@
+[config]
+input_folder_path    = ./bigdata1/zt53/data/face/
+annotations_path     = ./Bounding Boxes/
+num_keypoints        = 68
+
+train_datasets_names = aflw_ours
+train_folders        = aflw_ours_organized/frontal/trainset
+train_annotations    = 
+
+val_datasets_names   = aflw_ours
+val_folders          = aflw_ours_organized/frontal/testset
+val_annotations      = 
+
+output_folder        = ./dataset
+output_prefix        = aflw_ours_frontal_
