@@ -206,15 +206,15 @@ chmod +x *.sh
 
 ### Evaluation of our pre-trained models
 
-| Split | Directory |  LUVLi                | UGLLI                 |
-|-------|-----------|-----------------------|-----------------------|
-| 1     | run_108   | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/1cCcC5bCPLT2zllgLlHrAgmkx5QvCs12z/view?usp=sharing) | - |
-| 2     | run_109   | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/1D1Y7R8-67dPn-n1_DwQQ04RiKyccdF80/view?usp=sharing) | - |
-| 3     | run_507   | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/1AilmsnZtpLirsfkgcbaHCc_ylrVWFTJh/view?usp=sharing) | - |
-| 4     | run_1005  | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/1fyxPnp3Dm3oy2IvhqSGEVNM_pTew8NY_/view?usp=sharing) |- |
-| 5     | run_5004  | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/15L9Ss1zpai2FaK54tqCWGlm7dfOk7dVV/view?usp=sharing) |- |
-| 1     | run_924   | -                     |  lr-0.00002-39.pth.tar |
-| 2     | run_940   | -                     |  lr-0.00002-39.pth.tar |
+| Split | Name                 | Directory |  LUVLi                | UGLLI                 |
+|-------|--------------------- |-----------|-----------------------|-----------------------|
+| 1     | 300-W Split 1        | run_108   | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/1cCcC5bCPLT2zllgLlHrAgmkx5QvCs12z/view?usp=sharing) | - |
+| 2     | 300-W Split 2        | run_109   | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/1D1Y7R8-67dPn-n1_DwQQ04RiKyccdF80/view?usp=sharing) | - |
+| 3     | AFLW-19              | run_507   | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/1AilmsnZtpLirsfkgcbaHCc_ylrVWFTJh/view?usp=sharing) | - |
+| 4     | WFLW                 | run_1005  | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/1fyxPnp3Dm3oy2IvhqSGEVNM_pTew8NY_/view?usp=sharing) |- |
+| 5     | MERL-RAV (AFLW_ours) | run_5004  | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/15L9Ss1zpai2FaK54tqCWGlm7dfOk7dVV/view?usp=sharing) |- |
+| 1     | 300-W Split 1        | run_924   | -                     |  lr-0.00002-39.pth.tar |
+| 2     | 300-W Split 2        | run_940   | -                     |  lr-0.00002-39.pth.tar |
 
 Copy the pre-trained models to the ```abhinav_model_dir``` first. The directory structure should look like this:
 ```bash
