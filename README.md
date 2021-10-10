@@ -26,3 +26,51 @@ Please cite the following papers if you find this repository useful:
   year={2019}
 }
 ```
+
+### Evaluation of our pre-trained models
+
+| Split | Name                 | Directory |  LUVLi                | UGLLI                 |
+|-------|--------------------- |-----------|-----------------------|-----------------------|
+| 1     | 300-W Split 1        | run_108   | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/1cCcC5bCPLT2zllgLlHrAgmkx5QvCs12z/view?usp=sharing) | - |
+| 2     | 300-W Split 2        | run_109   | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/1D1Y7R8-67dPn-n1_DwQQ04RiKyccdF80/view?usp=sharing) | - |
+| 3     | AFLW-19              | run_507   | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/1AilmsnZtpLirsfkgcbaHCc_ylrVWFTJh/view?usp=sharing) | - |
+| 4     | WFLW                 | run_1005  | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/1fyxPnp3Dm3oy2IvhqSGEVNM_pTew8NY_/view?usp=sharing) |- |
+| 5     | MERL-RAV (AFLW_ours) | run_5004  | [lr-0.00002-49.pth.tar](https://drive.google.com/file/d/15L9Ss1zpai2FaK54tqCWGlm7dfOk7dVV/view?usp=sharing) |- |
+| 1     | 300-W Split 1        | run_924   | -                     |  lr-0.00002-39.pth.tar |
+| 2     | 300-W Split 2        | run_940   | -                     |  lr-0.00002-39.pth.tar |
+
+Copy the pre-trained models to the ```abhinav_model_dir``` first. The directory structure should look like this:
+```bash
+./FaceAlignmentUncertainty/
+|--- abhinav_model_dir/
+|           |--- run_108
+|           |       |--lr-0.00002-49.pth.tar
+|           |
+|           |--- run_109
+|           |       |--lr-0.00002-49.pth.tar
+|           |
+|           |--- run_507
+|           |       |--lr-0.00002-49.pth.tar
+|           |
+|           |--- run_1005
+|           |       |--lr-0.00002-49.pth.tar
+|           |
+|           |--- run_5004
+|           |       |--lr-0.00002-49.pth.tar
+|  ...
+
+```
+
+Next type the following:
+```bash
+./scripts_evaluation.sh
+```
+
+In case you want to get our qualitative plots and also the transformed figures, type:
+```bash
+python plot/show_300W_images_overlaid_with_uncertainties.py --exp_id abhinav_model_dir/run_109_evaluate/ --laplacian
+python plot/plot_uncertainties_in_transformed_space.py          -i run_109_evaluate/300W_test --laplacian
+python plot/plot_residual_covariance_vs_predicted_covariance.py -i run_109_evaluate --laplacian
+python plot/plot_histogram_smallest_eigen_value.py              -i run_109_evaluate --laplacian
+```
+
