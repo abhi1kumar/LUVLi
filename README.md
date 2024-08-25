@@ -1,5 +1,5 @@
 # LUVLi and UGLLI Face Alignment
-The code is officially available [here](https://www.merl.com/research/license/LUVLi)
+The code is officially available [here](https://github.com/merlresearch/LUVLi)
 
 [LUVLi Face Alignment: Estimating Landmarks' Location, Uncertainty, and Visibility Likelihood](https://arxiv.org/pdf/2004.02980.pdf), [CVPR 2020](http://cvpr2020.thecvf.com/)
 
